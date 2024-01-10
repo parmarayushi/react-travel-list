@@ -8,11 +8,17 @@ import PackingList from "./PackingList";
 import States from "./States";
 
 function App() {
+  const [items, setItems] = useState([]);
+
+  const handleAddItems = (item) => {
+    setItems((data) => [...data, item]);
+  };
+
   return (
     <div className="app">
       <Logo />
-      <Form />
-      <PackingList />
+      <Form onAddItems={handleAddItems} />
+      <PackingList items={items} />
       <States />
     </div>
   );
