@@ -37,8 +37,7 @@ body {
   button,
   select,
   input {
-    @apply text-[#5a3e2b] bg-orange-200 border-none px-14 py-5 font-bold;
+    @apply text-[#5a3e2b] bg-orange-200 border-none px-12 py-4 text-3xl font-bold;
     border-radius: 10rem;
-    font-size: 1.8rem;
   }
 }

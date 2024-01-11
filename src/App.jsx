@@ -1,9 +1,7 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import Logo from "./Logo";
 import Form from "./Form";
+import Logo from "./Logo";
 import PackingList from "./PackingList";
 import States from "./States";
 
@@ -35,7 +33,7 @@ function App() {
         onDeleteItem={handleDeleteItem}
         onToggleItem={handleToggleItem}
       />
-      <States />
+      <States items={items} />
     </div>
   );
 }
