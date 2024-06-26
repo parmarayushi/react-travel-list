@@ -1,0 +1,24 @@
+.app {
+  @apply w-full h-screen grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+.items {
+  @apply list-none w-[80%] grid gap-5 justify-center content-start;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.states {
+  @apply bg-green-200 text-center text-4xl font-bold px-0 py-8;
+}
+
+.clearList,
+.sort {
+  @apply uppercase px-9 py-3 text-xl font-bold my-0 mx-3;
+}
+
+input[type="checkbox"] {
+  height: 2rem;
+  width: 2rem;
+  accent-color: #e5771f;
+}
